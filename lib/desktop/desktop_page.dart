@@ -3,6 +3,7 @@ import 'package:compro/desktop/components/dialog_benefits.dart';
 import 'package:compro/desktop/pages/about_us_page.dart';
 import 'package:compro/desktop/pages/contact_page.dart';
 import 'package:compro/desktop/pages/product_page.dart';
+import 'package:compro/desktop/pages/promo_page.dart';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -100,6 +101,19 @@ class _DesktopPageState extends State<DesktopPage> {
                       },
                       child: Text(
                         "Kontak",
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                          // color: Colors.white,
+                        ),
+                      ),
+                    ),
+                    TextButton(
+                      onPressed: () {
+                        changeDisplayDesktopBody(PromoPage(), 5);
+                      },
+                      child: Text(
+                        "Promo",
                         style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,
