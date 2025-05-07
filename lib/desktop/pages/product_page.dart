@@ -1,5 +1,4 @@
 import 'package:compro/const.dart';
-import 'package:compro/desktop/desktop_page.dart';
 import 'package:compro/desktop/pages/desktop_home_page.dart';
 import 'package:compro/desktop/pages/jumbo_bag_page.dart';
 import 'package:compro/desktop/pages/kain_majun_page.dart';
@@ -113,20 +112,20 @@ class _ProductPageState extends State<ProductPage> {
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            InkWell(
-                              child: Image.asset(
-                                'assets/images/logolengkap.png',
-                                width: widthDesktop * 0.1,
-                              ),
-                              onTap: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) => DesktopPage(),
-                                  ),
-                                );
-                              },
-                            ),
+                            // InkWell(
+                            //   child: Image.asset(
+                            //     'assets/images/logolengkap.png',
+                            //     width: widthDesktop * 0.1,
+                            //   ),
+                            //   onTap: () {
+                            //     Navigator.push(
+                            //       context,
+                            //       MaterialPageRoute(
+                            //         builder: (context) => DesktopPage(),
+                            //       ),
+                            //     );
+                            //   },
+                            // ),
                             SizedBox(height: 10),
                             FittedBox(
                               child: Text(

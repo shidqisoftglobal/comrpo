@@ -1,6 +1,7 @@
 import 'package:compro/const.dart';
 import 'package:compro/desktop/components/dialog_benefits.dart';
 import 'package:compro/desktop/pages/about_us_page.dart';
+import 'package:compro/desktop/pages/contact_page.dart';
 import 'package:compro/desktop/pages/product_page.dart';
 
 import 'package:flutter/cupertino.dart';
@@ -14,19 +15,6 @@ class DesktopPage extends StatefulWidget {
 }
 
 class _DesktopPageState extends State<DesktopPage> {
-  // // =========================================
-  // // ignore: unused_field
-  // int _selectedAppBar = 0;
-  // // ignore: avoid_init_to_null
-  // Widget? _currentAppBar = null;
-
-  // void _changeAppBarContent(Widget content, int index) {
-  //   setState(() {
-  //     _currentAppBar = content;
-  //     _selectedAppBar = index;
-  //   });
-  // }
-
   int selectedIndexdesktop = 0;
   Widget? currentDisplayDesktop = ProductPage();
 
@@ -98,7 +86,20 @@ class _DesktopPageState extends State<DesktopPage> {
                         changeDisplayDesktopBody(ProductPage(), 1);
                       },
                       child: Text(
-                        "Products",
+                        "Produk",
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                          // color: Colors.white,
+                        ),
+                      ),
+                    ),
+                    TextButton(
+                      onPressed: () {
+                        changeDisplayDesktopBody(ContactPage(), 4);
+                      },
+                      child: Text(
+                        "Kontak",
                         style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,
