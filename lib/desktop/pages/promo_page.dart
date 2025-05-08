@@ -16,6 +16,8 @@ class PromoPage extends StatelessWidget {
     {'name': 'Produk C', 'discount': '50%'},
   ];
 
+  PromoPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,6 +33,7 @@ class PromoPage extends StatelessWidget {
                 borderRadius: BorderRadius.circular(10.0),
                 boxShadow: [
                   BoxShadow(
+                    // ignore: deprecated_member_use
                     color: Colors.grey.withOpacity(0.3),
                     spreadRadius: 2,
                     blurRadius: 5,
@@ -89,6 +92,7 @@ class PromoPage extends StatelessWidget {
             ElevatedButton(
               onPressed: () {
                 // Tambahkan logika aksi tombol di sini (misalnya, navigasi ke halaman produk)
+                // ignore: avoid_print
                 print('Tombol Belanja Sekarang ditekan!');
               },
               style: ElevatedButton.styleFrom(

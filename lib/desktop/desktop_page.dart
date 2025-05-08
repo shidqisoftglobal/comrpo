@@ -1,6 +1,7 @@
 import 'package:compro/const.dart';
 import 'package:compro/desktop/components/dialog_benefits.dart';
 import 'package:compro/desktop/pages/about_us_page.dart';
+import 'package:compro/desktop/pages/cms_page.dart';
 import 'package:compro/desktop/pages/contact_page.dart';
 import 'package:compro/desktop/pages/product_page.dart';
 import 'package:compro/desktop/pages/promo_page.dart';
@@ -123,10 +124,22 @@ class _DesktopPageState extends State<DesktopPage> {
                     ),
                   ],
                 ),
-                Container(
-                  width: widthDesktop * 0.15,
-                  color: bgColor,
-                  child: CupertinoSearchTextField(),
+                Row(
+                  children: [
+                    IconButton(
+                      onPressed: () {
+                        changeDisplayDesktopBody(CMSPage(), 6);
+                      },
+                      icon: Icon(Icons.person),
+                      color: Colors.white,
+                    ),
+                    SizedBox(width: 10),
+                    Container(
+                      width: widthDesktop * 0.15,
+                      color: bgColor,
+                      child: CupertinoSearchTextField(),
+                    ),
+                  ],
                 ),
               ],
             ),
